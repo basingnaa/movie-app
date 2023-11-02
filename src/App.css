@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #ed6a5a;
+    --secondaryColor: #cfd8d7;
+    --mainTextColor: white;
+    --secondaryTextColor: #07090f;
+}
