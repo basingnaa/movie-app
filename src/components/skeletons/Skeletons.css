@@ -1,0 +1,33 @@
+.skeleton {
+    background-color: var(--tertiaryColor);
+    margin: 0.75rem 0;
+    border-radius: 0.25rem;
+}
+
+.skeleton.movieCardTitle {
+    height: 0.75rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.skeleton.movieCardImage {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.movieCardSkeleton {
+    text-align: center;
+    width: fit-content;
+}

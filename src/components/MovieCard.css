@@ -1,0 +1,35 @@
+.movieCard {
+    text-align: center;
+    width: 220px;
+}
+
+.movieCard .movieImage {
+    width: 200px;
+    border-radius: 10px;
+    border: 5px solid var(--secondaryColor);
+    margin: 10px;
+    overflow: hidden;
+    height: auto;
+}
+
+.movieCard .movieImage img{
+    width: 200px;
+}
+
+.movieCard:hover {
+    cursor: pointer;
+    .movieImage {
+        border-color: var(--primaryColor);
+    }
+    color: var(--primaryColor);
+}
+
+.movieCard .movieImage svg {
+    position: absolute;
+    margin-top: 132px;
+    margin-left: 75px;
+}
+
+.movieCard path {
+    width: 50px;
+}

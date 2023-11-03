@@ -1,0 +1,25 @@
+.homePage {
+    background-color: var(--secondaryColor);
+    color: var(--textColor);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.homePage h1 {
+    margin: 0 10px;
+}
+
+.homePage .movieSection h2 {
+    margin: 10px;
+}
+
+.homePage .movieSection {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.homePage .movieList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}

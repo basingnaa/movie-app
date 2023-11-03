@@ -6,7 +6,11 @@
 
 :root {
     --primaryColor: #ed6a5a;
-    --secondaryColor: #cfd8d7;
-    --mainTextColor: white;
-    --secondaryTextColor: #07090f;
+    --secondaryColor: #1e1f25;
+    --tertiaryColor: #424450;
+    --textColor: white;
+}
+
+body {
+    background-color: var(--secondaryColor);
 }

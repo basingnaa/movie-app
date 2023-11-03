@@ -1,0 +1,44 @@
+.header {
+    background-color: var(--primaryColor);
+    height: 100px;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header h2 {
+    margin: 5px;
+}
+
+.header .searchBar {
+    margin: 0 auto;
+}
+
+.header .searchBar {
+    width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--tertiaryColor);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .searchBar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: var(--tertiaryColor);
+}
+
+.header .searchBar button {
+    border: none;
+    background-color: var(--tertiaryColor);
+    color: var(--textColor);
+}
+
+@media only screen and (max-width: 400px) {
+    .header .searchBar {
+        width: 100%;
+    }
+}
