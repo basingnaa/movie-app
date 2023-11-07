@@ -1,0 +1,71 @@
+.details {
+    display: flex;
+    color: var(--textColor);
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.movieView .details .detailsImage {
+    width: 300px;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.movieView .details .detailsImage img {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.movieView .details .detailsText {
+    max-width: 800px;
+    margin: 2rem 0;
+}
+
+.movieView .details .detailsText .movieTitle {
+    margin-bottom: 1.5rem;
+}
+
+.movieView .details .detailsText .movieTitle h1 span {
+    color: var(--tertiaryColor);
+    font-weight: 500;
+}
+
+.movieView .details .detailsText .movieTitle .movieFacts .rating {
+    color: var(--tertiaryColor);
+    margin-right: 1rem;
+    border: 1px solid var(--tertiaryColor);
+    padding: 0 2px;
+}
+
+.movieView .details .detailsText .movieTitle .movieFacts .releaseDate {
+    margin-right: 1rem;
+}
+
+.movieView .details .detailsText .movieTitle .movieFacts .genres {
+    margin-right: 1rem;
+}
+
+.movieView .details .detailsText .movieInfo .overview {
+    margin-bottom: 1.5rem;
+}
+
+.movieView .details .detailsText .movieInfo .people {
+    display: flex;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.movieView .details .detailsText .movieInfo .people .profile {
+    min-width: 33%;
+    padding-right: 20px;
+}
+
+.movieView .details .detailsText .movieInfo .people .profile p a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: 700;
+}

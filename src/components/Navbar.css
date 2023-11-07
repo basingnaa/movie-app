@@ -29,6 +29,7 @@
     outline: none;
     width: 100%;
     background-color: var(--tertiaryColor);
+    color: var(--textColor);
 }
 
 .header .searchBar button {

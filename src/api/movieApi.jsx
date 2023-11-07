@@ -4,12 +4,10 @@ const movieApi = axios.create({
     baseURL: "https://api.themoviedb.org/3"
 })
 
-export const movieUrlEndpoint = '/movie'
-
-const nowPlayingUrlEndpoint = '/movie/now_playing'
-const popularUrlEndpoint = '/movie/popular'
-const topRatedEndpoint = '/movie/top_rated'
-const upcomingEndpoint = '/movie/upcoming'
+export const nowPlayingUrlEndpoint = 'movie/now_playing'
+export const popularUrlEndpoint = '/movie/popular'
+export const topRatedEndpoint = '/movie/top_rated'
+export const upcomingEndpoint = '/movie/upcoming'
 
 const config = {
     headers: {
@@ -37,5 +35,10 @@ export const getTopRated = async() => {
 
 export const getUpcoming = async () => {
     const response = await movieApi.get(upcomingEndpoint,config)
+    return response.data
+}
+
+export const getMovieDetails = async (movie_id) => {
+    const response = await movieApi.get(`movie/${movie_id}`,config)
     return response.data
 }

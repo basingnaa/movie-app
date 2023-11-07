@@ -1,7 +1,7 @@
 import MovieCard from '../components/MovieCard'
 import './HomePage.css'
 import useSWR from 'swr'
-import { getNowPlaying, getPopular, getTopRated, getUpcoming, movieUrlEndpoint as cacheKey } from '../api/movieApi'
+import { getNowPlaying, getPopular, getTopRated, getUpcoming, nowPlayingUrlEndpoint, popularUrlEndpoint, topRatedEndpoint, upcomingEndpoint} from '../api/movieApi'
 import SkeletonMovieCard from '../components/skeletons/SkeletonMovieCard'
 
 function HomePage() {
@@ -10,25 +10,25 @@ function HomePage() {
     isNPLoading,
     nPerror,
     data: nowPlaying,
-  } = useSWR(cacheKey, getNowPlaying)
+  } = useSWR(nowPlayingUrlEndpoint, getNowPlaying)
 
   const {
     isPopLoading,
     popError,
     data: popular,
-  } = useSWR(cacheKey, getPopular)
+  } = useSWR(popularUrlEndpoint, getPopular)
 
   const {
     isTRLoading,
     tRError,
     data: topRated,
-  } = useSWR(cacheKey, getTopRated)
+  } = useSWR(topRatedEndpoint, getTopRated)
 
   const {
     isUPLoading,
     uPError,
     data: upcoming,
-  } = useSWR(cacheKey, getUpcoming)
+  } = useSWR(upcomingEndpoint, getUpcoming)
 
   
 
