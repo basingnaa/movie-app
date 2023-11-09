@@ -15,11 +15,9 @@ function MovieViewPage() {
   } = useSWR(location?.state, getMovieDetails)
 
   let details
-  if (isLoading) {
-    details = <p>Loading...</p>
-  } else if (error) {
-    details = <p>{error.message}</p>
-  } else {
+  if (isLoading) details = <p>Loading...</p>
+  else if (error) details = <p>{error.message}</p>
+  else {
     details = <MovieDetails movieDetails={movieDetails} />
   }
 

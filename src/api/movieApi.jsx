@@ -42,3 +42,19 @@ export const getMovieDetails = async (movie_id) => {
     const response = await movieApi.get(`movie/${movie_id}`,config)
     return response.data
 }
+
+export const searchMovie = async (searchTerm) => {
+    const searchConfig = {
+        headers: {
+            "Accept": "application/json",
+        },
+        params: {
+            "api_key": "8a495c286fb797f007940c6275782b59",
+            "query": searchTerm
+        }
+    }
+
+    const response = await movieApi.get('search/movie', searchConfig)
+    console.log(response.data)
+    return response.data
+}

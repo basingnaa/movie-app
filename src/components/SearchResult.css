@@ -1,0 +1,25 @@
+.result {
+    display: flex;
+}
+
+.result:hover {
+    background-color: var(--secondaryColor);
+    cursor: pointe;
+}
+
+.resultImage {
+    width: 60px;
+    margin: 10px;
+    height: fit-content;
+}
+
+.resultImage img {
+    width: 60px;
+    border-radius: 5px;
+}
+
+.resultText {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
